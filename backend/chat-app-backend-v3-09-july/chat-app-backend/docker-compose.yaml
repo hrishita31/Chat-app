@@ -1,0 +1,47 @@
+services:
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb1
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_DATABASE=mongo_db
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+    # volumes:
+    #   - dbdata6:/data/db
+    networks:
+      - my_network
+    restart: on-failure
+    # env_file:
+    #   - .env
+  
+  # chat-app-backend-server:
+  #   build:
+  #     context: .
+  #   ports:
+  #     - "80:1323"
+  #   networks:
+  #     - my_network
+  #   restart: on-failure
+  #   depends_on:
+  #     - redis
+  #     - mongodb
+
+  redis:
+    image: redis:6.0.7
+    container_name: redis
+    restart: always
+    volumes:
+      - redis_volume_data:/data
+    ports:
+      - 6379:6379
+
+
+volumes:
+  redis_volume_data:
+  # redis_insight_volume_data:
+
+networks:
+  my_network:

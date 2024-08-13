@@ -1,0 +1,78 @@
+/* .dashboard-page {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  .user-details {
+    margin-top: 20px;
+  }
+  
+  .user-details p {
+    margin: 10px 0;
+  }
+  
+  .error-message {
+    color: red;
+  }
+   */
+
+
+  /* Dashboard.css */
+
+/* body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.dashboard-page {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .dashboard-page h2 {
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .user-details {
+    background-color: #f9fafc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  .user-details p strong {
+    color: #333333;
+  }
+  
